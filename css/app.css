@@ -1,0 +1,290 @@
+/* Body */
+body {
+    position: relative; /* Needed for scrollspy */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #fff;
+    color: #333;
+    scroll-behavior: smooth;
+}
+
+/* Navbar */
+.navbar {
+    background: #fff;
+    padding: 5px 15px;
+}
+
+.navbar-nav .nav-item {
+    margin: 0 15px; 
+    font-size: 0.8rem; 
+}
+
+.nav-link.active {
+    font-weight: 600;
+    color: #000 !important;
+    border-bottom: 2px solid #000;
+}
+
+.social-icons a {
+    margin-left: 10px;
+    color: #333;
+    transition: color 0.3s;
+    padding: 10px;
+}
+
+.social-icons a:hover {
+    color: #000;
+}
+
+/* Scroll-margin for anchors */
+#about {
+    scroll-margin-top: 100px; 
+}
+#experience {
+    scroll-margin-top: 50px; 
+}
+
+/* Hero */
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    padding: 120px 20px 80px;
+    background: #fff;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.hero p {
+    font-size: 1.0rem;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.typing {
+    display: inline-block;
+    border-right: 2px solid #333;
+    white-space: nowrap;
+    overflow: hidden;
+    font-family: monospace;
+    font-size: 1.5rem;
+    animation: typing 7s steps(30, end) infinite,
+               blink 0.75s step-end infinite;
+}
+
+@keyframes typing {
+    0% { width: 0 }
+    40% { width: 62% }  /* fully typed */
+    60% { width: 50% }  /* pause */
+    100% { width: 0 }   /* delete */
+}
+
+@keyframes blink {
+    from, to { border-color: transparent }
+    50% { border-color: #333 }
+}
+
+.hero img {
+    max-width: 500px;
+    border-radius: 5%;
+    box-shadow: 30px 30px 5px rgba(0,0,0,0.15);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.hero img:hover {
+    transform: rotate(10deg) scale(1.05);
+    box-shadow: 40px 40px 25px rgba(0,0,0,0.25); 
+}
+
+.hero .btn-custom {
+    border-radius: 8px;
+    padding: 10px 22px;
+    font-size: 1rem;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+}
+
+/* Section spacing */
+section {
+    padding: 100px 20px;
+}
+
+/* Footer */
+footer {
+    padding: 10px;
+    text-align: center;
+    border-top: 1px solid #ddd;
+    background: #1b1a1aff;
+    color: #fff;
+}
+
+/* Tech Stack Slider */
+.tech-slider {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    background: #f8f9fa;
+    padding: 20px 0;
+    border-radius: 10px;
+    box-shadow: inset 0 0 5px rgba(0,0,0,0.1);
+}
+
+.tech-track {
+    display: flex;
+    width: calc(100%); /* long width for smooth looping */
+    animation: scroll 10s linear infinite;
+}
+
+.tech-item {
+    flex: 0 0 auto;
+    width: 120px;
+    margin: 0 20px;
+    text-align: center;
+}
+
+.tech-item img {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.tech-item img:hover {
+    transform: scale(1.2);
+}
+
+/* Scrolling animation */
+@keyframes scroll {
+    0%   { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+    /* Hero Section */
+    .hero {
+        min-height: auto;
+        padding: 100px 15px 60px;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 0.9rem;
+    }
+
+    .typing {
+        font-size: 1.1rem;
+    }
+
+    .hero img {
+        max-width: 100%;
+        margin-top: 30px;
+    }
+
+    .hero .d-flex {
+        flex-direction: column;
+        gap: 15px !important;
+    }
+
+    .hero .btn {
+        width: 100%;
+    }
+
+    /* Section spacing */
+    section {
+        padding: 60px 15px;
+    }
+
+    /* About Section */
+    #about .display-5 {
+        font-size: 2rem;
+    }
+
+    #about .fs-5 {
+        font-size: 1rem !important;
+    }
+
+    #about img {
+        max-width: 100% !important;
+        margin-top: 30px;
+    }
+
+    /* Skills Section */
+    #skills .fs-3 {
+        font-size: 1.5rem !important;
+    }
+
+    #skills .fs-5 {
+        font-size: 0.95rem !important;
+    }
+
+    /* Projects Section */
+    #projects h3 {
+        font-size: 1.5rem;
+    }
+
+    /* Blog Section */
+    #blog .display-4 {
+        font-size: 2rem;
+    }
+
+    #blog .fs-5 {
+        font-size: 0.95rem !important;
+    }
+
+    /* Navbar */
+    .navbar-nav .nav-item {
+        margin: 5px 0;
+    }
+
+    .navbar-nav .nav-link {
+        padding: 10px 15px;
+    }
+
+    /* Contact Section */
+    #contact .fs-5 {
+        font-size: 0.95rem !important;
+    }
+
+    #contact .fs-3 {
+        font-size: 1.5rem;
+    }
+
+    /* Tech Stack Slider - already has mobile styles inline */
+}
+
+@media (max-width: 576px) {
+    /* Extra small devices */
+    .hero h1 {
+        font-size: 1.75rem;
+    }
+
+    .hero {
+        padding: 80px 10px 40px;
+    }
+
+    section {
+        padding: 40px 10px;
+    }
+
+    #about .display-5,
+    #blog .display-4 {
+        font-size: 1.75rem;
+    }
+
+    .hero .btn {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+}

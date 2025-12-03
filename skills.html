@@ -1,0 +1,169 @@
+<section id="skills" class="py-5 bg-light">
+  <div class="container" data-aos="fade-up">
+    <div class="text-center mb-5">
+      <h2 class="fw-bold fs-3">Tech Stack & Skills</h2>
+      <p class="text-muted fs-5">
+        Programming languages and technologies I've learned.
+      </p>
+    </div>
+
+    <!-- Tech Scrolling Animation -->
+    <div class="tech-slider">
+      <div class="tech-track">
+        <!-- HTML -->
+        <div class="tech-item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" title="HTML5">
+          <p class="small fw-bold mt-2">HTML</p>
+        </div>
+        <!-- CSS -->
+        <div class="tech-item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" title="CSS3">
+          <p class="small fw-bold mt-2">CSS</p>
+        </div>
+        <!-- JavaScript -->
+        <div class="tech-item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" title="JavaScript">
+          <p class="small fw-bold mt-2">JavaScript</p>
+        </div>
+        <!-- PHP -->
+        <div class="tech-item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP" title="PHP">
+          <p class="small fw-bold mt-2">PHP</p>
+        </div>
+        <!-- React -->
+        <div class="tech-item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" title="React">
+          <p class="small fw-bold mt-2">React</p>
+        </div>
+        <!-- Node.js -->
+        <div class="tech-item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" title="Node.js">
+          <p class="small fw-bold mt-2">Node.js</p>
+        </div>
+        <!-- Express -->
+        <div class="tech-item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="Express" title="Express">
+          <p class="small fw-bold mt-2">Express</p>
+        </div>
+        <!-- MongoDB -->
+        <div class="tech-item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB" title="MongoDB">
+          <p class="small fw-bold mt-2">MongoDB</p>
+        </div>
+        <!-- MySQL -->
+        <div class="tech-item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" title="MySQL">
+          <p class="small fw-bold mt-2">MySQL</p>
+        </div>
+        <!-- Bootstrap -->
+        <div class="tech-item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap" title="Bootstrap">
+          <p class="small fw-bold mt-2">Bootstrap</p>
+        </div>
+        <!-- Duplicate for infinite loop effect -->
+        <div class="tech-item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" title="HTML5">
+          <p class="small fw-bold mt-2">HTML</p>
+        </div>
+        <div class="tech-item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" title="CSS3">
+          <p class="small fw-bold mt-2">CSS</p>
+        </div>
+        <div class="tech-item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" title="JavaScript">
+          <p class="small fw-bold mt-2">JavaScript</p>
+        </div>
+        <div class="tech-item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP" title="PHP">
+          <p class="small fw-bold mt-2">PHP</p>
+        </div>
+        <div class="tech-item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" title="React">
+          <p class="small fw-bold mt-2">React</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <style>
+    .tech-slider {
+      overflow: hidden;
+      position: relative;
+      width: 100%;
+      background: #fff;
+      padding: 20px 0;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      margin-top: 30px;
+    }
+
+    .tech-track {
+      display: flex;
+      width: calc(200%);
+      animation: scroll 25s linear infinite;
+    }
+
+    .tech-item {
+      flex: 0 0 auto;
+      width: 110px;
+      margin: 0 15px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .tech-item img {
+      width: 60px;
+      height: 60px;
+      object-fit: contain;
+      transition: transform 0.3s ease, filter 0.3s ease;
+      filter: grayscale(0);
+    }
+
+    .tech-item img:hover {
+      transform: scale(1.15) rotate(5deg);
+      filter: drop-shadow(0 0 8px rgba(0, 100, 200, 0.4));
+    }
+
+    .tech-item p {
+      margin-top: 5px;
+      font-size: 0.8rem;
+      color: #333;
+      white-space: nowrap;
+    }
+
+    @keyframes scroll {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+
+    /* Mobile responsiveness */
+    @media (max-width: 768px) {
+      .tech-slider {
+        padding: 15px 0;
+      }
+
+      .tech-item {
+        width: 80px;
+        margin: 0 10px;
+      }
+
+      .tech-item img {
+        width: 50px;
+        height: 50px;
+      }
+
+      .tech-item p {
+        font-size: 0.7rem;
+        margin-top: 3px;
+      }
+    }
+  </style>
+</section>
+

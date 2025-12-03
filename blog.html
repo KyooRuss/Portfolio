@@ -1,0 +1,208 @@
+<section id="blog" class="py-5 bg-light">
+  <div class="container" data-aos="fade-up">
+    <div class="text-center mb-5">
+      <h2 class="fw-bold display-4">Learning & Insights</h2>
+      <p class="text-muted fs-5">
+        Exploring cybersecurity vulnerabilities, ethical hacking, and practical security applications.
+      </p>
+    </div>
+
+    <div class="accordion" id="blogAccordion">
+      <!-- SQL Injection Article -->
+      <div class="accordion-item shadow-sm border-0 mb-3">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#sqlInjection">
+            <span class="badge bg-danger me-2">Security</span>
+            SQL Injection (SQLi)
+          </button>
+        </h2>
+        <div id="sqlInjection" class="accordion-collapse collapse" data-bs-parent="#blogAccordion">
+          <div class="accordion-body">
+            <img src="images/SQLInjection.jpg" alt="SQL Injection" class="img-fluid rounded mb-3" style="max-height: 250px; object-fit: cover;">
+            <p class="text-muted small mb-2">Vulnerability Overview</p>
+            <p class="card-text">SQL Injection is a critical vulnerability where attackers supply malicious input treated as part of a database query. By understanding how SQLi works, from concatenated user input to bypassing authentication, I've learned that the best prevention uses parameterized queries, input validation, and least privilege principles.</p>
+            <div class="mt-3">
+              <span class="badge bg-danger me-1">Security</span>
+              <span class="badge bg-primary">Database</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Command Injection Article -->
+      <div class="accordion-item shadow-sm border-0 mb-3">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#commandInjection">
+            <span class="badge bg-danger me-2">Security</span>
+            Command Injection
+          </button>
+        </h2>
+        <div id="commandInjection" class="accordion-collapse collapse" data-bs-parent="#blogAccordion">
+          <div class="accordion-body">
+            <img src="images/CommandInjection.jpg" alt="Command Injection" class="img-fluid rounded mb-3" style="max-height: 250px; object-fit: cover;">
+            <p class="text-muted small mb-2">OS-Level Vulnerability</p>
+            <p class="card-text">Command injection allows attackers to execute arbitrary OS commands by supplying untrusted input to shell functions. I learned that preventing this requires avoiding shell invocation, using argument lists instead of string concatenation, validating input, and running processes with least privilege to minimize damage if exploited.</p>
+            <div class="mt-3">
+              <span class="badge bg-danger me-1">Security</span>
+              <span class="badge bg-warning">System</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- XSS Article -->
+      <div class="accordion-item shadow-sm border-0 mb-3">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#xssVulnerability">
+            <span class="badge bg-danger me-2">Security</span>
+            Cross-Site Scripting (XSS)
+          </button>
+        </h2>
+        <div id="xssVulnerability" class="accordion-collapse collapse" data-bs-parent="#blogAccordion">
+          <div class="accordion-body">
+            <img src="images/XSS.jpg" alt="Cross-Site Scripting" class="img-fluid rounded mb-3" style="max-height: 250px; object-fit: cover;">
+            <p class="text-muted small mb-2">Client-Side Vulnerability</p>
+            <p class="card-text">Reflected XSS occurs when user-supplied input is immediately reflected in a page's response without proper encoding. Through hands-on activities, I discovered how attackers inject malicious scripts to steal cookies, hijack sessions, or redirect users to phishing pages, and how output encoding prevents these attacks.</p>
+            <div class="mt-3">
+              <span class="badge bg-danger me-1">Security</span>
+              <span class="badge bg-info">Web</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- File Inclusion Article -->
+      <div class="accordion-item shadow-sm border-0 mb-3">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#fileInclusion">
+            <span class="badge bg-danger me-2">Security</span>
+            File Inclusion Attacks (LFI/RFI)
+          </button>
+        </h2>
+        <div id="fileInclusion" class="accordion-collapse collapse" data-bs-parent="#blogAccordion">
+          <div class="accordion-body">
+            <img src="images/LFI.jpg" alt="File Inclusion Attacks" class="img-fluid rounded mb-3" style="max-height: 250px; object-fit: cover;">
+            <p class="text-muted small mb-2">Path Traversal Vulnerability</p>
+            <p class="card-text">Local and Remote File Inclusion vulnerabilities allow attackers to include files from the server's filesystem or external sources. I learned that LFI can expose sensitive files through directory traversal (../../etc/passwd), while RFI enables remote code execution, both prevented by strict file whitelisting and input validation.</p>
+            <div class="mt-3">
+              <span class="badge bg-danger me-1">Security</span>
+              <span class="badge bg-warning">File System</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Offensive Security Article -->
+      <div class="accordion-item shadow-sm border-0 mb-3">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#offensiveSecurity">
+            <span class="badge bg-success me-2">Learning</span>
+            Offensive Security Introduction
+          </button>
+        </h2>
+        <div id="offensiveSecurity" class="accordion-collapse collapse" data-bs-parent="#blogAccordion">
+          <div class="accordion-body">
+            <img src="images/OSI.jpg" alt="Offensive Security" class="img-fluid rounded mb-3" style="max-height: 250px; object-fit: cover;">
+            <p class="text-muted small mb-2">Ethical Hacking & Penetration Testing</p>
+            <p class="card-text">In my offensive security training, I learned the mindset of ethical hackers and how to safely test websites for vulnerabilities in controlled environments. This experience taught me that understanding attacker techniques is essential for building stronger defenses and the critical importance of responsible, legal hacking practices.</p>
+            <div class="mt-3">
+              <span class="badge bg-success me-1">Learning</span>
+              <span class="badge bg-info">Hacking</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Defensive Security Article -->
+      <div class="accordion-item shadow-sm border-0 mb-3">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#defensiveSecurity">
+            <span class="badge bg-success me-2">Learning</span>
+            Defensive Security Introduction
+          </button>
+        </h2>
+        <div id="defensiveSecurity" class="accordion-collapse collapse" data-bs-parent="#blogAccordion">
+          <div class="accordion-body">
+            <img src="images/DSI.jpg" alt="Defensive Security" class="img-fluid rounded mb-3" style="max-height: 250px; object-fit: cover;">
+            <p class="text-muted small mb-2">Monitoring, Incident Response & Strategy</p>
+            <p class="card-text">Defensive security taught me how to recognize suspicious activities, respond to incidents, and work collaboratively on threat analysis. I learned that effective defense requires continuous monitoring, data-driven decision making, and a strong team approach to maintaining security posture and responding to evolving threats.</p>
+            <div class="mt-3">
+              <span class="badge bg-success me-1">Learning</span>
+              <span class="badge bg-secondary">Defense</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Networking Article -->
+      <div class="accordion-item shadow-sm border-0 mb-3">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#networking">
+            <span class="badge bg-success me-2">Learning</span>
+            Networking: Cybersecurity Foundation
+          </button>
+        </h2>
+        <div id="networking" class="accordion-collapse collapse" data-bs-parent="#blogAccordion">
+          <div class="accordion-body">
+            <img src="images/networking.jpg" alt="Networking" class="img-fluid rounded mb-3" style="max-height: 250px; object-fit: cover;">
+            <p class="text-muted small mb-2">Network Communication & Vulnerabilities</p>
+            <p class="card-text">Understanding networking revealed how data travels across systems and where vulnerabilities exist. I realized that every cyberattack, from phishing to malware, relies on network communication, and that knowledge of firewalls, encryption, and monitoring tools is essential for identifying and securing network weaknesses.</p>
+            <div class="mt-3">
+              <span class="badge bg-success me-1">Learning</span>
+              <span class="badge bg-primary">Network</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mailvelope PGP Article -->
+      <div class="accordion-item shadow-sm border-0 mb-3">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#mailvelope">
+            <span class="badge bg-success me-2">Learning</span>
+            Mailvelope PGP Encryption
+          </button>
+        </h2>
+        <div id="mailvelope" class="accordion-collapse collapse" data-bs-parent="#blogAccordion">
+          <div class="accordion-body">
+            <img src="images/mailvelope.jpg" alt="Mailvelope PGP Encryption" class="img-fluid rounded mb-3" style="max-height: 250px; object-fit: cover;">
+            <p class="text-muted small mb-2">Hands-On Cryptography Practice</p>
+            <p class="card-text">Working with Mailvelope taught me practical encryption implementation. I learned to generate keys, share public keys, and encrypt/decrypt messages using PGP standards. This hands-on experience demonstrated how encryption protects confidentiality, ensures authentication, maintains integrity, and provides non-repudiation in real-world digital communication.</p>
+            <div class="mt-3">
+              <span class="badge bg-success me-1">Learning</span>
+              <span class="badge bg-info">Encryption</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Common Attacks Article -->
+      <div class="accordion-item shadow-sm border-0 mb-3">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#commonAttacks">
+            <span class="badge bg-success me-2">Learning</span>
+            Common Attacks Activity
+          </button>
+        </h2>
+        <div id="commonAttacks" class="accordion-collapse collapse" data-bs-parent="#blogAccordion">
+          <div class="accordion-body">
+            <img src="images/CA.jpg" alt="Common Attacks" class="img-fluid rounded mb-3" style="max-height: 250px; object-fit: cover;">
+            <p class="text-muted small mb-2">Real-World Threat Awareness</p>
+            <p class="card-text">Through the Common Attacks activity, I learned how real-world cyberattacks exploit system weaknesses. Key takeaways include avoiding suspicious links, verifying email senders, using strong passwords, enabling multi-factor authentication, and keeping devices updated. Understanding these threats helps me recognize and defend against everyday online risks.</p>
+            <div class="mt-3">
+              <span class="badge bg-success me-1">Learning</span>
+              <span class="badge bg-warning">Awareness</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row mt-5">
+      <div class="col-12 text-center">
+        <p class="text-muted">Continuously learning and applying security best practices to build a secure digital future.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
